@@ -1,0 +1,53 @@
+/* video */
+
+body {
+font-family: Arial, Verdana;
+font-size: 1em;
+margin:0;
+padding:0;
+color: #000000;
+}
+
+.wrapper {
+margin: 1em 1em 1em 1em;
+padding: 1em 1em 1em 1em;
+background-color:#F7F7F7;
+border: 1px solid #666666;
+max-width:40em; 
+}
+
+h1 {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+h2 {
+font-size: 1.3em;
+font-weight: bold;
+}
+
+h3 {
+font-size: 1.1em;
+font-weight: bold;
+}
+
+h3 {
+font-size: 1em;
+font-weight: bold;
+}
+
+a {
+text-decoration:underline;
+color: #000000;
+}
+
+a:hover, a:focus {
+text-decoration:underline;
+background-color: #cccccc;
+}
+
+acronym {
+border-bottom: 1px dashed #000000;
+cursor: help;
+}
+

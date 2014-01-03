@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Video</title>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+<script type="text/javascript" src="video/js/flashcheck.js"></script>
+<script type="text/javascript" src="video/js/jquery.vidbox.js"></script>
+
+<link rel="stylesheet" href="video/css/video.css" media="screen" />
+
+<script type="text/javascript" src="video/colorbox/jquery.colorbox.js"></script>
+<link rel="stylesheet" href="video/colorbox/colorbox.css" media="screen" />
+
+<script type="text/javascript" src="video/js/playerfunctions.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){  
+
+	//CONFIG
+	playerUrl = "video/player/player.swf";
+	playerSkin = "video/skins/wienat/wienat.xml";
+	playerWidth = "100%";
+	playerHeight = "100%";
+	playerWidthBig = "100%";
+	playerHeightBig = "100%";	
+	
+	//file url video/videobig/previewimage    
+	playerFlv = "http://www.accessibility.at/sites/all/themes/yaml/uploads/player20-opensource/video/testfiles/testvideo.mp4";
+	//file url videobig or same as video
+	playerFlvBig = "http://www.accessibility.at/sites/all/themes/yaml/uploads/player20-opensource/video/testfiles/testvideo.mp4"; 
+	//file url previewimage
+	playerFlvImg = "http://www.accessibility.at/sites/all/themes/yaml/uploads/player20-opensource/video/testfiles/testpreview.jpg";
+	
+	currentVolume = 80; 
+	
+	//accessibility
+	
+	accessibilityPluginsPath = "audiodescription-1,captions-1";
+	accessibilityPluginsCapsOnlyPath = "captions-1";
+	accessibilityPluginsAudioOnlyPath = "audiodescription-1";
+	
+	audioButton = "on"; //on, off
+	//file url audio description
+	audioDescFile = "http://www.accessibility.at/sites/all/themes/yaml/uploads/player20-opensource/video/testfiles/testad.mp3";
+	audioDescVolume = 99;
+	
+	captionButton = "on"; //on, off
+	//file url captions
+	captionFile= "http://www.accessibility.at/sites/all/themes/yaml/uploads/player20-opensource/video/testfiles/testcaptions.xml";
+	captionBackground = "true";
+		
+	signButton = "off"; //on, off
+	//file url alternate sign language video
+	signLanguageUrl = ""; 
+	//file url alternate sign language previewimage 
+	signLanguageImg = "";
+
+});
+
+
+
+
+</script>
+
+</head>
+
+<body>
+<p><a href="#video" class="videoskip">zum Video</a></p>
+
+<h1>Testseite</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id orci urna. Sed venenatis, massa ullamcorper mattis fringilla, tortor arcu convallis elit, non dapibus lectus ipsum vel libero.</p>
+
+<div id="videobox" class="vb_default">
+	<a name="video"></a><h2>Testvideo</h2>
+	
+	<div id="warningtext">
+		<h2>Achtung:</h2>Zur Betrachtung von Videos auf wien.at m&uuml;ssen sie Javascript in Ihrem Borwser aktivieren.<br /><br />
+	</div>
+	<div id="preview" >
+		Ohne Javascript bzw. Flash Plugin k&ouml;nnen Sie die folgenden Video Downloadlink benutzen.<br />
+		<a href="/">Downloadlink (MP4, xx <acronym title="megabyte">MB</acronym>)</a><br />
+		
+		<script type="text/javascript">
+		$(document).ready(function(){  		
+			playerInits(playerFlv,playerWidth,playerHeight,playerFlvImg);
+		});
+		</script>
+
+	</div>
+	<div id="extplayercontrolsid" class="extplayercontrols">
+		<script type="text/javascript">
+		$(document).ready(function(){ 
+			initPlayerControls();
+		});
+		</script>					
+	</div>	
+</div>
+
+
+				
+<p class="bigvidlink">
+	<a class="singlevideobox" href="http://www.web-tech.at/wien/player/player20-opensource/video/testfiles/testvideo.mp4">Video in h&ouml;herer Qualit&auml;t abspielen</a>
+</p>	
+
+
+<p id="vie_tv-transkript-toggle">
+	<a id="vie_tv-transkript-hide" href="#" onclick="return false;">Mitschrift einblenden</a>
+	<a id="vie_tv-transkript-show" href="#" onclick="return false;">Mitschrift ausblenden</a>
+</p>
+
+
+<div id="vie_tv-transkript">
+	<h2>Transkription:</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id orci urna. Sed venenatis, massa ullamcorper mattis fringilla, tortor arcu convallis elit, non dapibus lectus ipsum vel libero. Quisque libero odio, volutpat quis molestie sed, sodales a ligula. Quisque nisi velit, gravida in feugiat et, rutrum vel purus. Duis rhoncus fringilla tincidunt. Donec sed risus non dolor scelerisque feugiat. Sed dolor ante, luctus eu tempus non, congue a ligula. Mauris venenatis feugiat aliquam. In ut enim justo, ut congue felis. Sed id dolor id mi bibendum ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum, risus vel tincidunt mollis, ipsum massa porta metus, quis vestibulum leo libero vulputate quam. Fusce mollis lectus at libero suscipit hendrerit. Curabitur interdum ipsum eget mi ultricies pellentesque. Donec interdum nisl quis erat tincidunt porta. </p>
+</div>
+
+
+
+</body>
+</html>

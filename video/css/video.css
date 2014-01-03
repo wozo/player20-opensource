@@ -1,0 +1,215 @@
+/* video */
+
+.vb_default{
+width:320px; 
+font-size: 1em;
+}
+
+.vb_big{
+width:640px; 
+padding-left: 10px;
+padding-top: 10px;
+font-size: 1.1em;
+}
+
+.plwr_default {
+width:320px; 
+height:240px;
+}
+
+.plwr_big{
+width:640px; 
+height:513px;
+}
+
+#vie_tv-transkript, a#vie_tv-transkript-show {
+display:none;
+}
+
+#preview .prevvidvi {border:1px solid #cccccc;}
+#preview .prevvidob {border:1px solid #cccccc;}
+#preview .prevvidem {border:1px solid #cccccc;}
+
+#preview .prevvidvi2 {border:0px solid #ffffff;}
+#preview .prevvidob2 {border:0px solid #ffffff;}
+#preview .prevvidem2 {border:0px solid #ffffff;}
+
+.extplayercontrols{
+background-color: #FFFFFF;
+padding: 0em 0em 0em 0em;
+margin: 0.5em 0em 0em 0em;
+}
+.extplayercontrolshead{
+background-color: #F7F7F7;
+border: 1px solid #E2E2E2;
+padding: 0em 0em 0em 0.3em;
+margin: 0em 0em 0em 0em;
+}
+
+.extplayercontrolshead h2{
+padding: 0.1em 0em 0.1em 0em;
+margin: 0em 0em 0em 0em;
+font-size:1em;
+}
+
+.extplayercontrolshead a:focus{
+background-color: transparent;
+}
+
+#helpcontrol{
+padding: 0em 0em 0em 0.3em;
+margin: 0em 0em 0em 0em;
+border-bottom: 1px solid #E2E2E2;
+border-left: 1px solid #E2E2E2;
+border-right: 1px solid #E2E2E2;
+scrolling: auto;
+}
+
+#cboxLoadedContent #helpcontrol{
+overflow: auto;
+
+}
+#helpcontrol ul{
+list-style-image: none;
+list-style-type: none;
+margin: 0em 0em 0em 0.5em;
+padding: 0em 0em 0em 0.5em;
+}
+#helpcontrol ul li{
+margin: 0em 0em 0em 0em;
+padding: 0em 0em 0.3em 0em;
+list-style-type: none;
+}
+
+#helpcontrol ul li a:link{
+text-decoration:underline;
+}
+
+#helpcontrol ul li a:hover, #helpcontrol ul li a:focus{
+text-decoration:underline;
+background-color:#F7F7F7;
+}
+
+.extplayercontrolshead .hc_bg1{
+padding: 0em 0em 0em 0em;
+
+}
+
+.extplayercontrolshead .hc_bg2{
+padding: 0em 0em 0em 0em;
+}
+
+#helpcontrol ul li a.eins {
+background-image: url(../../video/img/play.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.zwei {
+background-image: url(../../video/img/stop.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.drei, #helpcontrol ul li a.example8 {
+background-image: url(../../video/img/big.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.drei2 {
+background-image: url(../../video/img/small.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.drei_1 {
+background-image: url(../../video/img/vor.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.drei_2 {
+background-image: url(../../video/img/zurueck.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.vier {
+background-image: url(../../video/img/caps.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.fuenf {
+background-image: url(../../video/img/mute1.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.fuenf2 {
+background-image: url(../../video/img/mute2.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.sechs {
+background-image: url(../../video/img/sig.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol {
+display:none;
+}
+
+#helpcontrol ul li a.sieben {
+background-image: url(../../video/img/orig.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.acht {
+background-image: url(../../video/img/volume1.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#helpcontrol ul li a.neun {
+background-image: url(../../video/img/volume2.gif);
+background-repeat:no-repeat;
+background-position: 0.2em 0em;
+padding: 0em 0em 0em 2em;
+}
+
+#waningtext {
+border: 1px solid red; 
+padding: 5px; 
+width:388px; 
+}
+
+
+div#cboxClose:focus{background-position:-25px -25px;}
+
+#cboxContent #cboxClose a.cb_clo:focus, #cboxClose a.cb_clo:active {
+position:absolute; 
+top:0px; 
+right:0px; 
+width:250px; 
+height:25px; 
+text-align:right; 
+background:url(../../images/close2.gif) right 0px no-repeat; 
+padding:5px 50px 0px 0px;
+}
